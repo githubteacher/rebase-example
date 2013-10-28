@@ -1,5 +1,13 @@
 html { height: 100%; }
 body {
   min-height: 100%;
-  background-image: url(../img/bg_pony.png);
+  background: #1e5799 url(../img/bg_pony.png); /* Old browsers */
+  background: url(../img/bg_pony.png), -moz-linear-gradient(-45deg,  #1e5799 0%, #2defef 15%, #27f746 30%, #f3f727 44%, #fc4128 59%, #f927cf 72%, #5127f7 86%, #1e5799 100%); /* FF3.6+ */
+  background: url(../img/bg_pony.png), -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1e5799), color-stop(15%,#2defef), color-stop(30%,#27f746), color-stop(44%,#f3f727), color-stop(59%,#fc4128), color-stop(72%,#f927cf), color-stop(86%,#5127f7), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+  background: url(../img/bg_pony.png), -webkit-linear-gradient(-45deg,  #1e5799 0%,#2defef 15%,#27f746 30%,#f3f727 44%,#fc4128 59%,#f927cf 72%,#5127f7 86%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+  background: url(../img/bg_pony.png), -o-linear-gradient(-45deg,  #1e5799 0%,#2defef 15%,#27f746 30%,#f3f727 44%,#fc4128 59%,#f927cf 72%,#5127f7 86%,#1e5799 100%); /* Opera 11.10+ */
+  background: url(../img/bg_pony.png), -ms-linear-gradient(-45deg,  #1e5799 0%,#2defef 15%,#27f746 30%,#f3f727 44%,#fc4128 59%,#f927cf 72%,#5127f7 86%,#1e5799 100%); /* IE10+ */
+  background: url(../img/bg_pony.png), linear-gradient(135deg,  #1e5799 0%,#2defef 15%,#27f746 30%,#f3f727 44%,#fc4128 59%,#f927cf 72%,#5127f7 86%,#1e5799 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  /*background-image: url(../img/bg_pony.png);*/
 }
