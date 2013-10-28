@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Git Rebasing: The Quiz!</title>
+    <meta name="description" content="Another substrate for teaching Git rebasing, both regular and interactive.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Git Attitude <small>by Delicious Insights</small></h3>
+      </div>
+
+      <!-- Jumbotron -->
+      <div id="question" class="jumbotron">
+        <h1>The Git Rebasing Quiz!</h1>
+        <p class="lead">So you think you know rebasing?  Let’s find out, shall we?</p>
+        <a class="btn btn-lg btn-success next" href="#">
+          <i class="glyphicon glyphicon-flash"></i>
+          Prove your rebasing-fu!
+        </a>
+      </div>
+
+      <object id="template" type="text/handlebars" style="display: none">
+        <h1>{{{title}}}</h1>
+
+        {{#each answers}}
+          <div class="radio">
+            <label class="control-label">
+              <input type="radio" name="answers" data-correct="{{correct}}">
+              {{{text}}}
+            </label>
+          </div>
+        {{/each}}
+
+        <a class="btn btn-lg btn-primary next" href="#">
+          Next question
+          <i class="glyphicon glyphicon-chevron-right"></i>
+        </a>
+      </object>
+
+      <object id="wrapUp" type="text/handlebars" style="display: none">
+        {{#if huzzah}}
+          <h1>Huzzah! You rule!</h1>
+
+          <p>You scored <strong>{{score}}</strong> out of {{total}}.  Pretty good!</p>
+        {{else}}
+          <h1>Ahem…</h1>
+
+          <p>You scored <strong>{{score}}</strong> out of {{total}}.  Not so good.</p>
+        {{/if}}
+      </object>
+
+      <hr>
+      <footer class="footer">
+        <p>&copy; 2013 Git Attitude / Delicious Insights</p>
+      </footer>
+
+     </div> <!-- /container -->
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/git-quiz.js"></script>
+  </body>
+</html>

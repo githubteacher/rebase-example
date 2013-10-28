@@ -1,0 +1,17 @@
+Point de départ :
+  - Quiz multi-pages sur le rebasing
+  - Entière côté client : HTML, CSS, JS
+  - À un moment, branche pour ajouter les comptes à rebours par question (il faudra la rebaser à terme)
+  - Une autre branche est partie en même temps, pour une expérience dont seuls les 3 derniers commits nous intéresseront au final (rebase 3-points)
+  - Quant à master, elle a continué à évoluer séparément, cahin-caha (nettoyage par rebase interactif)
+
+Rebasing interactif : nettoyer l'historique récent de master (6 derniers commits)
+  - FIXME
+
+Rebasing simple :
+  - Ramener la branche countdowns sur un master à jour
+  - Fast-forward de master sur le résultat
+
+Rebasing 3-points classique :
+  - Ne rebaser que les 3 derniers commits de experiment sur un master à jour
+  - Fast-forward de master sur le résultat
