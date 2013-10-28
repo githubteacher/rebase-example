@@ -11,3 +11,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   /*background-image: url(../img/bg_pony.png);*/
 }
+footer {
+  text-align: center;
+}
