@@ -5,13 +5,17 @@ Point de départ :
   - Une autre branche est partie en même temps, pour une expérience dont seuls les 3 derniers commits nous intéresseront au final (rebase 3-points)
   - Quant à master, elle a continué à évoluer séparément, cahin-caha (nettoyage par rebase interactif)
 
-Rebasing interactif : nettoyer l'historique récent de master (6 derniers commits)
-  - FIXME
+Rebasing interactif : nettoyer l'historique récent de master (7 derniers commits)
+  - Dégager le 2 et le 5, qui s'annulent l'un l'autre
+  - Fusionner les codebases du 1 (licence MIT) et du 3 (passage à CC)
+    -> adapter le message du 1 en conséquence
 
 Rebasing simple :
-  - Ramener la branche countdowns sur un master à jour
-  - Fast-forward de master sur le résultat
+  - Ramener la branche countdowns sur master
+    -> le css/git-quiz.css sera créé des deux côtés.  Fusionner dans l'ordre qu'on veut
+       en arbitrant le conflit.
+  - Fast-forward de master sur le countdowns obtenu
 
 Rebasing 3-points classique :
-  - Ne rebaser que les 3 derniers commits de experiment sur un master à jour
-  - Fast-forward de master sur le résultat
+  - Ne rebaser que les 3 derniers commits de experiment sur master
+  - Fast-forward de master sur le experiment obtenu
